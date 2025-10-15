@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            color: white;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(80deg, black, grey);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #card{
+            width: 400px;
+            height: 430px;
+            background-color: rgb(59, 59, 59);
+            backdrop-filter: blur(50px);
+            border: 3px solid #ff296d;
+            border-radius: 10px;
+            transition: 0.3s ease;
+           
+        }
+
+        #card:hover{
+            box-shadow: 0px 0px 10px #ff2167;
+            transform: translateY(-5px);
+        }
+
+        .in-card{
+            text-align: center;
+            margin: 30px 30px;
+        }
+
+        h2{
+            padding-bottom: 20px;
+        }
+
+        .side{
+            padding: 30px 0px 10px 0px;
+            text-align: left;
+            user-select: none;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border-style: none;
+            outline: none;
+            color: black;
+            border: 2px solid #ff2167;
+            transition: 0.3s;
+            
+        }
+
+        .btn{
+            margin-top: 35px;
+            padding: 15px 0px;
+            width: 100%;
+            color: black;
+            border-radius: 10px;
+            background-color: #ff2268;
+            color: white;
+            border-style: none;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        input:focus{
+            box-shadow: 0px 0px 7px #ff2268;
+            transform: translateY(-2px);
+        }
+         
+        .btn:hover{
+            background-color: #ff1962;
+            transform: scale(1.1);
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <div class="in-card">
+            <h2>Login</h2>
+            <form action="">
+                <!-- <h3 class="side">Name</h3>
+                <input type="text" name="name" placeholder="your name"> -->
+                <h3 class="side">Email</h3>
+                <input type="email" name="email" placeholder="example123@gmail.com">
+                <h3 class="side">Password</h3>
+                <input type="password" name="password" placeholder="password"><br>
+                <button class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
